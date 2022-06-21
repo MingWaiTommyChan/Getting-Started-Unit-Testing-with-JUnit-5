@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+module1 () {
+    javac -cp jars/*:. module1/src/patientintake/*.java module1/test/patientintake/*.java
+    java -jar jars/junit-platform-console-standalone-1.7.0-all.jar -cp=module1/src:module1/test -include-classname=.*  --scan-classpath
+}
+
+module2 () {
+    javac -cp jars/*:. module2/src/patientintake/*.java module2/test/patientintake/*.java
+    java -jar jars/junit-platform-console-standalone-1.7.0-all.jar -cp=module2/src:module2/test -include-classname=.*  --scan-classpath
+}
+
+module3 () {
+    javac -cp jars/*:. module3/src/patientintake/*.java module3/test/patientintake/*.java
+    java -cp module3/src:module3/test patientintake.ClinicMain
+}
+
+module4 () {
+    javac -cp jars/*:. module4/src/patientintake/*.java module4/src/patientintake/notifier/*.java module4/test/patientintake/*.java module4/test/patientintake/notifier/*.java
+    java -jar jars/junit-platform-console-standalone-1.7.0-all.jar -cp=module4/src:module4/test:jars/javax.mail.jar:. -include-classname=.* --scan-classpath
+
+}
+
+module5 () {
+    javac -cp jars/*:. module5/src/patientintake/*.java module5/src/patientintake/notifier/*.java module5/test/patientintake/*.java module5/test/patientintake/notifier/*.java
+    java -jar jars/junit-platform-console-standalone-1.7.0-all.jar -cp=module5/src:module5/test:jars/*.jar:jars/javax.mail.jar:. -include-classname=.* --scan-classpath
+}
+
+rm -rf *.class
+
+case $1 in
+
+  module1)
+    module1
+    ;;
+
+  module2)
+    module2
+    ;;
+
+  module3)
+    module3
+    ;;
+
+  module4)
+    module4
+    ;;
+
+  module5)
+    module5
+    ;;
+
+  *)
+    echo -n "Command Not Found"
+    ;;
+esac
+
+

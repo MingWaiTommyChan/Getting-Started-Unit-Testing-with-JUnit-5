@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="jars">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jars/junit-jupiter-engine-5.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/junit-platform-commons-1.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/apiguardian-api-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/javax.mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/junit-jupiter-api-5.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/junit-platform-console-standalone-1.7.0-all.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/mail-1.4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/activation-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

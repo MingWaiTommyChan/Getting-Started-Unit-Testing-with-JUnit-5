@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Getting-Started-Unit-Testing-with-JUnit-5.iml" filepath="$PROJECT_DIR$/.idea/Getting-Started-Unit-Testing-with-JUnit-5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module1/module1.iml" filepath="$PROJECT_DIR$/module1/module1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module2/module2.iml" filepath="$PROJECT_DIR$/module2/module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module3/module3.iml" filepath="$PROJECT_DIR$/module3/module3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module4/module4.iml" filepath="$PROJECT_DIR$/module4/module4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module5/module5.iml" filepath="$PROJECT_DIR$/module5/module5.iml" />
+    </modules>
+  </component>
+</project>
